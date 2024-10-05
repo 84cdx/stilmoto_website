@@ -1,3 +1,3 @@
 import Navbar from "./header/Navbar";
 
-export {Navbar}
+export { Navbar };
