@@ -8,9 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "custom-red": "#ff0000",
       },
     },
   },

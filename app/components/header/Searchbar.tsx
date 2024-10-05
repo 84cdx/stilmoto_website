@@ -7,9 +7,9 @@ const Searchbar = () => {
       <input
         type="text"
         placeholder="Search"
-        className="w-full h-10 p-4 rounded-full bg-gray-100 border placeholder:text-lg placeholder:md:text-sm"
+        className="w-full h-10 p-4 rounded-full bg-gray-100 border placeholder:text-base placeholder:md:text-sm"
       />
-      <FaSearch className="text-2xl md:text-base" />
+      <FaSearch className="text-gray-400 text-2xl md:text-base" />
     </div>
   );
 };
