@@ -1,9 +1,12 @@
+// RootLayout.tsx
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "./components";
 import Header from "./components/header/Header";
+import Banner from "./components/Banner";
+import CategoryList from "./components/CategoryList";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +25,17 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         <Navbar />
+        <div className="flex mt-6 mx-auto max-w-[1280px] px-5 md:px-8">
+          {/* Container für CategoryList und Banner */}
+          <div className="flex flex-col md:flex-row w-full md:space-x-6 justify-between">
+            <div className="hidden md:flex md:w-1/4"> {/* 25% Breite für die Kategorie-Liste */}
+              <CategoryList />
+            </div>
+            <div className="md:w-3/4"> {/* 75% Breite für den Banner */}
+              <Banner />
+            </div>
+          </div>
+        </div>
         {children}
       </body>
     </html>

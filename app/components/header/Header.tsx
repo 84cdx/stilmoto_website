@@ -13,7 +13,7 @@ const Header = () => {
             <FaUser className="text-2xl cursor-pointer hover:text-custom-red" />
           </div>
           <div className="hidden md:flex space-x-6 items-center">
-            <div className="h-14 w-14 md:w-full md:h-10 p-4 border rounded-full cursor-pointer flex space-x-2 items-center hover:bg-gray-400 hover:text-white">
+            <div className="h-14 w-14 md:w-full md:h-10 p-4 border rounded-full cursor-pointer flex space-x-2 items-center hover:bg-gray-100">
               <div className="flex space-x-2 items-center">
                 <IoIosLogIn className="text-2xl md:text-sm" />
                 <a className="text-lg md:text-sm">Login</a>
