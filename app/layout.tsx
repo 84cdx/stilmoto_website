@@ -26,12 +26,11 @@ export default function RootLayout({
         <Header />
         <Navbar />
         <div className="flex mt-6 mx-auto max-w-[1280px] px-5 md:px-8">
-          {/* Container für CategoryList und Banner */}
           <div className="flex flex-col md:flex-row w-full md:space-x-6 justify-between">
-            <div className="hidden md:flex md:w-1/4"> {/* 25% Breite für die Kategorie-Liste */}
+            <div className="hidden md:flex md:w-1/4">
               <CategoryList />
             </div>
-            <div className="md:w-3/4"> {/* 75% Breite für den Banner */}
+            <div className="md:w-3/4">
               <Banner />
             </div>
           </div>
